@@ -35,13 +35,13 @@ export default {
 @import "../../assets/sass/vars.scss";
 
     header{
-        background-color: red;
         position: fixed;
         width: 100%;
 
         a{
             color: #fff;
             font-size: 14px;
+            transition: 0.3s;
 
             &:hover{
                 color: $hovMenu;
