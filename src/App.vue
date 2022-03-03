@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-      <MyHeader :menuItems="menuItems"/>
+      <MyHeader :menuItems="menuItems" />
       <MyMain />
-      <MyFooter :infos="infos"/>
+      <MyFooter :infos="infos" />
   </div>
 </template>
 
@@ -28,6 +28,7 @@ export default {
         { text: "Testimonials", link: "Testimonials" },
         { text: "Blog", link: "Blog" },
       ],
+      // footer nav
       infos: [
         // link nav 1
         {

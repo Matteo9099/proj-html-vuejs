@@ -45,6 +45,12 @@ export default {
         button{
             background-color: $hovMenu;
             color: #fff;
+            transition: 0.5s;
+
+            &:hover{
+                color: #fff;
+                transform: scale(0.98);
+            }
         }
     }
 
