@@ -1,6 +1,7 @@
 <template>
   <div id="app">
       <MyHeader :menuItems="menuItems"/>
+      <MyMain />
       <MyFooter :infos="infos"/>
   </div>
 </template>
@@ -8,12 +9,14 @@
 <script>
 import MyHeader from "./components/MyHeader.vue"
 import MyFooter from "./components/MyFooter.vue"
+import MyMain from "./components/MyMain.vue"
 
 export default {
   name: 'App',
   components: {
     MyHeader,
     MyFooter,
+    MyMain,
   },
   data() {
     return{

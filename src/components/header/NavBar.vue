@@ -37,6 +37,8 @@ export default {
     header{
         position: fixed;
         width: 100%;
+        background-color: #000;
+        z-index: 99;
 
         a{
             color: #fff;
