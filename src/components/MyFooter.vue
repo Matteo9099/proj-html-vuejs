@@ -1,18 +1,23 @@
 <template>
-
-    <FooterTop :infos="infos"/>
+    <div>
+        <FooterTop :infos="infos" />
+        <FooterBottom :linkBottom="linkBottom" />
+    </div>
+    
 
 </template>
 
 <script>
 import FooterTop from "./footer/FooterTop.vue"
+import FooterBottom from "./footer/FooterBottom.vue"
 
 export default {
     name: 'MyFooter',
     components: {
         FooterTop,
+        FooterBottom,
     },
-    props: ["infos"],
+    props: ["infos", "linkBottom"],
 };
 </script>
 

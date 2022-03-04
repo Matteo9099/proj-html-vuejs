@@ -1,11 +1,11 @@
 <template>
     <section class="py-5">
-        <div class="container row">
-            <div class="col offset-2">
+        <div class="container row m-auto">
+            <div class="col">
                 <img src="../../assets/img/home_img-compressor.jpg" alt="atleti uomo donna">
             </div>
             <div class="col">
-                <h3>Sign Up For A Free Training Ssession!</h3>
+                <h3>Sign Up For A Free Training Session!</h3>
                 <form class="d-flex flex-column">
                     <span>Nome*</span>
                     <input type="text" class="form-control">

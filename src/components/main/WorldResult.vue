@@ -5,7 +5,7 @@
             <div class="row g-4">
                 <div class="col-12 text-center">
                     <h4>REAL WORLD RESULTS</h4>
-                    <img src="../../assets/img/divider-xx-red.png" class="py-3" alt="img x">
+                    <img src="../../assets/img/divider-xx-red.png" class="py-4" alt="img x">
                 </div>
                 <div class="col-6 d-flex" v-for="(list, index) in listResults" :key="index">
                     <div class="row ms-card p-3 mx-3">

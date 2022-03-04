@@ -2,7 +2,7 @@
   <div id="app">
       <MyHeader :menuItems="menuItems" />
       <MyMain />
-      <MyFooter :infos="infos" />
+      <MyFooter :infos="infos" :linkBottom="linkBottom" />
   </div>
 </template>
 
@@ -59,6 +59,12 @@ export default {
           ],
         },
       ],
+      linkBottom:[
+        { text: "Copyright 2012 - 2020", link: "copyright" },
+        { text: "Avada Theme by Theme Fusion", link: "avada-theme" },
+        { text: "All Rights Reserved", link: "reserved" },
+        { text: "Powered by WordPress", link: "wordPress" },
+      ],
     }
   }
 }
@@ -67,8 +73,5 @@ export default {
 <style lang="scss">
 @import "./assets/sass/style.scss";
 
-    .done {
-      text-decoration: underline;
-    }
 
 </style>
