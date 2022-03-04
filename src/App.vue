@@ -64,6 +64,18 @@ export default {
         { text: "Avada Theme by Theme Fusion", link: "avada-theme" },
         { text: "All Rights Reserved", link: "reserved" },
         { text: "Powered by WordPress", link: "wordPress" },
+        { socials: [
+              { 
+                  icon: "fa-brands fa-facebook-f", url:"#" 
+              },
+              { 
+                  icon: "fa-brands fa-twitter", url:"#" 
+              },
+              { 
+                  icon: "fa-brands fa-instagram", url:"#" 
+              },
+          ],
+        }
       ],
     }
   }

@@ -11,11 +11,11 @@
                     <span class="text-white fw-bold">{{ trainer.name }}</span>
                     <span class="text-white fw-bold">{{ trainer.profession }}</span>
                     <p class="my-3">{{ trainer.text }}</p>   
-                    <div class="socials d-flex">
+                    <div class="socials d-flex py-4">
                         <!-- Icone social -->
                         <div v-for="(social,index) in trainer.socials" :key="trainer.name + index">
-                            <a :href="social.url">
-                                <i :class="social.icon" ></i>
+                            <a :href="social.url" class=" py-2 px-3 rounded me-3">
+                                <i :class="social.icon"></i>
                             </a>
                         </div>
                     </div>
@@ -109,6 +109,11 @@ export default {
             border: 1px solid $colorText;
             text-decoration: none;
             color: $colorText;
+        }
+        a{
+       
+            color: #fff;
+            background-color: $bgBannerDue;
         }
     }
 

@@ -32,9 +32,6 @@ export default {
     section{
         background-color: $bgBannerDue;
 
-         li{
-            width: 180px;
-        }
         a{
             font-size: 0.8rem;
             color: $colorText;
