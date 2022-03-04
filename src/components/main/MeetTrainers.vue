@@ -13,6 +13,11 @@
                     <p class="my-3">{{ trainer.text }}</p>   
                     <div class="socials d-flex">
                         <!-- Icone social -->
+                        <div v-for="(social,index) in trainer.socials" :key="trainer.name + index">
+                            <a :href="social.url">
+                                <i :class="social.icon" ></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -28,18 +33,51 @@ export default {
         return{
             listTrainers:[
                 {
+                    socials: [
+                        { 
+                            icon: "fa-brands fa-facebook-f", url:"#" 
+                        },
+                        { 
+                            icon: "fa-brands fa-twitter", url:"#" 
+                        },
+                        { 
+                            icon: "fa-brands fa-instagram", url:"#" 
+                        },
+                    ],
                     imgUrl: require("../../assets/img/trainer1.jpg"),
                     name: "Ann Baker",
                     profession: "Personal Trainer",
                     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat."
                 },
                 {
+                    socials: [
+                        { 
+                            icon: "fa-brands fa-facebook-f", url:"#" 
+                        },
+                        { 
+                            icon: "fa-brands fa-twitter", url:"#" 
+                        },
+                        { 
+                            icon: "fa-brands fa-instagram", url:"#" 
+                        },
+                    ],
                     imgUrl: require("../../assets/img/trainer3.jpg"),
                     name: "Anne Warren",
                     profession: "Personal Trainer",
                     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, onare volutpat."
                 },
                 {
+                    socials: [
+                        { 
+                            icon: "fa-brands fa-facebook-f", url:"#" 
+                        },
+                        { 
+                            icon: "fa-brands fa-twitter", url:"#" 
+                        },
+                        { 
+                            icon: "fa-brands fa-instagram", url:"#" 
+                        },
+                    ],
                     imgUrl: require("../../assets/img/trainer4.jpg"),
                     name: "Peter Rice",
                     profession: "Personal Trainer",
