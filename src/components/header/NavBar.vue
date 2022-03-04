@@ -1,9 +1,9 @@
 <template>
     <header>
-        <div class="container d-flex align-items-center justify-content-between">
+        <div class="container d-flex align-items-center justify-content-between ms-brand">
             <!-- Logo -->
             <a href="#">
-                <img src="../../assets/img/gym_logo_1x.png" alt="">
+                <img  src="../../assets/img/gym_logo_1x.png" alt="">
             </a>
             <!-- Menu -->
             <nav>
@@ -37,13 +37,22 @@ export default {
     header{
         position: fixed;
         width: 100%;
-        background-color: #000;
+        background-color: rgba($color: #000000, $alpha: 0.9);
         z-index: 99;
+
+        .ms-brand{
+            height: 100px;
+
+            img{
+                height: 100%;
+            }
+        }
 
         a{
             color: #fff;
             font-size: 14px;
             transition: 0.3s;
+            height: 100%;
 
             &:hover{
                 color: $hovMenu;

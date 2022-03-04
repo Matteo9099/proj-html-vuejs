@@ -67,4 +67,8 @@ export default {
 <style lang="scss">
 @import "./assets/sass/style.scss";
 
+    .done {
+      text-decoration: underline;
+    }
+
 </style>

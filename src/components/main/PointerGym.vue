@@ -2,7 +2,9 @@
     <section class="py-5">
         <div class="container m-auto row py-5">
             <div class="col text-center mx-2" v-for="(menu, index) in menuFitness" :key="index">
-                <h5 class="fw-bold">{{ menu.title }}</h5>
+                <i class="fa-solid"></i>
+                <h4 class="fw-bold">{{ menu.title }}</h4>
+                <img :src="`${menu.img}`" alt="">
                 <p>{{ menu.text}}</p>
             </div>
         </div>
@@ -49,11 +51,15 @@ export default {
         background-size: cover;
         background-position: center;
 
-        h5{
+        h4{
             color: #fff;
+            font-size: 18px
         }
         p{
             color: $colorText;
+        }
+        i{
+            color: red;
         }
 
     }

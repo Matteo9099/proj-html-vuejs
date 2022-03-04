@@ -3,6 +3,8 @@
         <WorldFitness />
         <FormUtente />
         <PointerGym />
+        <WorldResult />
+        <BannerMain />
     </div>
  
 </template>
@@ -11,6 +13,8 @@
 import WorldFitness from "./main/WorldFitness.vue"
 import FormUtente from "./main/FormUtente.vue"
 import PointerGym from "./main/PointerGym.vue"
+import WorldResult from "./main/WorldResult.vue"
+import BannerMain from "./main/BannerMain.vue"
 
 export default {
     name: 'MyMain',
@@ -18,6 +22,8 @@ export default {
         WorldFitness,
         FormUtente,
         PointerGym,
+        WorldResult,
+        BannerMain,
     },
 }
 </script>

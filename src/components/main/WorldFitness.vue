@@ -19,7 +19,6 @@ export default {
 
     section{
         background-color: $bgBanner;
-        border-bottom: 1px solid red;
 
         p{
             color: $colorText;
