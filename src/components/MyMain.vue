@@ -6,6 +6,7 @@
         <WorldResult />
         <BannerMain />
         <MeetTrainers />
+        <PerformanceNews />
     </div>
  
 </template>
@@ -17,6 +18,7 @@ import PointerGym from "./main/PointerGym.vue"
 import WorldResult from "./main/WorldResult.vue"
 import BannerMain from "./main/BannerMain.vue"
 import MeetTrainers from "./main/MeetTrainers.vue"
+import PerformanceNews from "./main/PerformanceNews.vue"
 
 export default {
     name: 'MyMain',
@@ -26,7 +28,8 @@ export default {
         PointerGym,
         WorldResult,
         BannerMain,
-        MeetTrainers
+        MeetTrainers,
+        PerformanceNews
     },
 }
 </script>
