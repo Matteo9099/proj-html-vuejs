@@ -2,7 +2,7 @@
     <section class="py-5">
         <div class="container m-auto row py-5">
             <div class="col text-center mx-2" v-for="(menu, index) in menuFitness" :key="index">
-                <div v-for="(i, index) in menu.icons" :key="menu.title + index">
+                <div v-for="(i, index) in menu.icons" :key="index">
                     <a :href="i.link">
                         <i :class="i.icon"></i>
                     </a>

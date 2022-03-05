@@ -1,19 +1,21 @@
 <template>
     <section class="py-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="links">
-                <div class="row">
-                    <div class="col" v-for="(link, index) in linkBottom" :key="index">
-                        <ul class="navbar-nav">
-                            <li class="nav-item d-flex">
-                                <a class="nav-link" href="`#${link.link}`">{{ link.text }}</a>
-                            </li>
-                        </ul>
-                    </div>
+        <div class="container d-flex">
+            <div class="row justify-content-between align-items-center">
+                <div class="col" v-for="(link, index) in linkBottom" :key="index">
+                    <ul class="navbar-nav">
+                        <li class="nav-item d-flex">
+                            <a class="nav-link" :href="link.link">{{ link.text }}</a>
+                        </li>
+                    </ul>
+                    <div class="socials d-flex">
+                        <div class="col" v-for="(icon, index) in link.socials" :key="index">
+                            <a :href="icon.url">
+                                <i :class="icon.icon"></i>
+                            </a>
+                        </div>
                 </div>
-            </div>
-            <div class="socials">
-
+                </div>
             </div>
         </div>
     </section>
