@@ -1,7 +1,7 @@
 <template>
     <section class="py-5">
         <div class="container row m-auto">
-            <div class="col">
+            <div class="col offset-1">
                 <img src="../../assets/img/home_img-compressor.jpg" alt="atleti uomo donna">
             </div>
             <div class="col">

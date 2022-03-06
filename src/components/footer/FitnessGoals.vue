@@ -1,11 +1,11 @@
 <template>
     <section class="py-5">
         <div class="container row m-auto d-flex align-items-center">
-            <div class="col-6 offset-2">
+            <div class="col-6">
                 <h2 class="text-white">Achieve You Fitness Goals</h2>
                 <p class="text-white">Flexible membership packages to suit all levels of athlete and achive your fitness goals</p>
             </div>
-            <div class="col-3 offset-1">
+            <div class="col-3 offset-3">
                 <a class="px-4 py-2" href="#">Join us</a>
             </div>
         </div>
