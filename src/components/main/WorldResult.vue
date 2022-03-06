@@ -27,7 +27,7 @@
                     <h4>HIGHT PERFORMANCE FACILITIES</h4>
                     <img src="../../assets/img/divider-xx-red.png" class="py-3" alt="img x">
                 </div>      
-                <div class="col-4 d-flex" v-for="(image, index) in imageLists" :key="index">
+                <div class="col-4 d-flex ms-imageTrainers" v-for="(image, index) in imageLists" :key="index">
                     <img :src="`${image.img}`" alt="">
                 </div>          
             </div>
@@ -91,6 +91,15 @@ export default {
             }
             span{
                 color: rgb(209, 206, 206);
+            }
+        }
+        .ms-imageTrainers{
+            img{
+                transition: 0.6s;
+                &:hover{
+                    transform: scale(1.1);
+                    box-shadow: 2px 2px 2px 2px #fff;
+                }
             }
         }
     }

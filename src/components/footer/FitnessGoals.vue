@@ -30,6 +30,12 @@ export default {
             border: 1px solid rgb(202, 202, 202);
             color: rgb(202, 202, 202);
             text-decoration: none;
+            transition: 0.5s;
+
+            &:hover{
+                box-shadow: 200px 0 #fff inset;
+                color: $bgLink;
+            }
         }
     }
 

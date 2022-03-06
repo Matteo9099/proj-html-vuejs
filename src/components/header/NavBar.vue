@@ -53,9 +53,11 @@ export default {
             font-size: 14px;
             transition: 0.3s;
             height: 100%;
+            transition: 0.5s;
 
             &:hover{
                 color: $hovMenu;
+                box-shadow: 0 2px $hovMenu ;
             }
         }
     }
