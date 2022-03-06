@@ -5,11 +5,13 @@
                 <h3 class="text-white">PEERFORMANCE NEWS</h3>
                 <img src="../../assets/img/divider-xx-red.png" alt="divide-xx">
             </div>
+        
             <div class="row m-auto justify-content-center gy-3 text-start">
                 <div class="col-3 mx-2 h-100 ms-cardImage" v-for="(athlete, index) in athletes" :key="index">
                     <img :src="`${athlete.imgUrl}`" class="img-fluid ms-hovImage">
-                    <div class="linkHover position-absolute">
+                    <div class="overlay">
                         <i class="fa-solid fa-link"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                     <div class="ms-card p-3">
                         <h4 class="text-white">{{ athlete.title }}</h4>
@@ -17,6 +19,7 @@
                     </div>
                 </div>
             </div>
+    
         </div>
     </section>
 </template>
@@ -86,26 +89,25 @@ export default {
     .ms-cardImage{
         position: relative;
         
-        .linkHover{
+        .overlay{
             position: absolute;
             top: 25%;
             left: 50%;
             transform: translate(-25%, -25%);
           
-
             i{
                 color:#fff;
+                margin-right: 10px;
             }
         }
      
         img {
-            opacity: 1;
+
             display: block;
             width: 100%;
             height: auto;
             transition: .5s ease;
             // background-color: red;
-            backface-visibility: hidden;
 
             &:hover{
                 opacity: 0.3;

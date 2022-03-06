@@ -4,7 +4,7 @@
         <div class="container d-flex flex-column justify-content-center align-items-center">
             <h1 class="ms-title-banner text-uppercase text-white">no pain no gain</h1>
             <p class="ms-text-banner">Motivation is what gets you started. Habit is what keeps you going</p>
-            <a class="ms-btn px-4 py-2" href="#">Join us today</a>
+            <a class="ms-btn px-4 py-2 mt-2" href="#">Join us today</a>
         </div>
 
 
@@ -46,6 +46,7 @@ export default {
             &:hover{
                 background-color: $hovMenu;
                 color: #fff;
+                box-shadow: 0 0 5px $hovMenu, 0 0 25px $hovMenu, 0 0 50px $hovMenu, 0 0 150px $hovMenu;
             }
         }
     }

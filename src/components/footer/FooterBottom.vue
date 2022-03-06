@@ -1,7 +1,7 @@
 <template>
     <section class="py-3">
-        <div class="container d-flex">
-            <div class="row justify-content-between align-items-center">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="row">
                 <div class="col" v-for="(link, index) in linkBottom" :key="index">
                     <ul class="navbar-nav">
                         <li class="nav-item d-flex">
@@ -11,10 +11,10 @@
                     <div class="socials d-flex">
                         <div class="col" v-for="(icon, index) in link.socials" :key="index">
                             <a :href="icon.url">
-                                <i :class="icon.icon"></i>
+                                <i class="p-3 me-3" :class="icon.icon"></i>
                             </a>
                         </div>
-                </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -42,6 +42,9 @@ export default {
                 text-decoration: underline;
                 color: $colorText;
             }
+        }
+        i{
+            background-color: $bgLink;
         }
     }
    
