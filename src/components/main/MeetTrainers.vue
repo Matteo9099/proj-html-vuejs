@@ -5,27 +5,6 @@
                 <h3 class="text-white">MEET OUR TRAINERS</h3>
                 <img src="../../assets/img/divider-xx-red.png" alt="divider xx">
             </div>
-            
-            <!-- 
-            <div class="col-3 d-flex flex-column mx-2" v-for="(trainer, index) in listTrainers" :key="index">
-                <img class="w-100" :src="`${trainer.imgUrl}`" alt="">
-                <div class="container d-flex flex-column text-start pt-3 ms-bgCard mb-5">
-                    <span class="text-white fw-bold">{{ trainer.name }}</span>
-                    <span class="text-white fw-bold">{{ trainer.profession }}</span>
-                    <p class="my-3">{{ trainer.text }}</p>   
-                    <div class="socials d-flex py-4">
-                        Icone social
-                        <div v-for="(social,index) in trainer.socials" :key="trainer.name + index">
-                            <a :href="social.url" class=" py-2 px-3 rounded me-3">
-                                <i :class="social.icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-            -->
-
-
             <div class="container mb-5">
                 <div class="ms-card" v-for="(trainer, index) in listTrainers" :key="index">
                     <div class="face face1">

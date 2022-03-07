@@ -10,8 +10,8 @@
                 <div class="col-3 mx-2 h-100 ms-cardImage mb-3" v-for="(athlete, index) in athletes" :key="index">
                     <img :src="`${athlete.imgUrl}`" class="img-fluid ms-hovImage">
                     <div class="overlay d-flex">
-                        <i class="fa-solid fa-link"></i>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-link" title="Copia URL"></i>
+                        <i class="fa-solid fa-magnifying-glass" title="Cerca"></i>
                     </div>
                     <div class="ms-card p-3">
                         <h4 class="text-white">{{ athlete.title }}</h4>
