@@ -136,9 +136,16 @@ export default {
                 position: relative;
                 cursor: pointer;
 
+                // Hover
                 &:hover .face.face1{
                     background: #ff0057;
                     transform: translateY(0);
+                }
+                &:hover .face.face2{
+                    transform: translateY(0);
+                }
+                &:hover .face.face2{
+                    box-shadow: 3px 5px $bgLink;
                 }
                 &:hover .face.face1 .content{
                     opacity: 1;
@@ -179,14 +186,6 @@ export default {
                     box-sizing: border-box;
                     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
                     transform: translateY(-80px);
-
-                    // hover
-                    &:hover{
-                        transform: translateY(0);
-                    }
-                    &:hover{
-                        box-shadow: 3px 5px $bgLink;
-                    }
                     
                     .content{
 
