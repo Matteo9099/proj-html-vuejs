@@ -7,9 +7,9 @@
             </div>
         
             <div class="row m-auto justify-content-center gy-3 text-start">
-                <div class="col-3 mx-2 h-100 ms-cardImage" v-for="(athlete, index) in athletes" :key="index">
+                <div class="col-3 mx-2 h-100 ms-cardImage mb-3" v-for="(athlete, index) in athletes" :key="index">
                     <img :src="`${athlete.imgUrl}`" class="img-fluid ms-hovImage">
-                    <div class="overlay">
+                    <div class="overlay d-flex">
                         <i class="fa-solid fa-link"></i>
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
@@ -88,16 +88,37 @@ export default {
 
     .ms-cardImage{
         position: relative;
+        transition: 0.6s linear;
+        padding: 0;
+        margin: 0;
         
+        &:hover{
+            background-color: $hovMenu;
+        }
+        &:hover img{
+            opacity: 0.3;
+        }
+        &:hover .overlay i{
+            display: block;
+        }
+
         .overlay{
             position: absolute;
             top: 25%;
             left: 50%;
-            transform: translate(-25%, -25%);
+            transform: translate(-50%, -50%);
           
             i{
                 color:#fff;
+                display: none;
                 margin-right: 10px;
+                font-size: 1.4rem;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
         }
      
@@ -107,11 +128,6 @@ export default {
             width: 100%;
             height: auto;
             transition: .5s ease;
-            // background-color: red;
-
-            &:hover{
-                opacity: 0.3;
-            }
         }
     }
 
