@@ -4,17 +4,21 @@
             <div class="row justify-content-between align-items-center">
                 <div class="col">
                     <ul class=" d-flex">
-                        <li class="nav-item d-flex" v-for="(link, index) in linkBottom" :key="index">
-                            <a class="nav-link" :href="link.link">{{ link.text }}</a>
+                        <li class="nav-item d-flex ms-4" v-for="(link, index) in linkBottom" :key="index">
+                            <a class="nav-link" :href="link.link">
+                                {{ link.text }}
+                            </a>
+                            <a href="#" v-for="(social, index) in link.socials" :key="index">
+                                <i :class="social.icon" class="p-3 mx-2"></i>
+                            </a>
                         </li>
                     </ul>
+                    <div class="col">
+                       
+                    </div>
                 </div>
              
-                <div class="col">
-                    <a href="#" v-for="(social, index) in linkBottom" :key="index">
-                        <i :class="social.icon"></i>
-                    </a>
-                </div>
+                
             
             </div>
         </div>
@@ -44,9 +48,10 @@ export default {
             }
         }
         i{
-            background-color: $bgLink;
+            background-color: $hovMenu;
+            font-size: 1.1rem;
         }
     }
-   
+
 
 </style>

@@ -2,10 +2,9 @@
     <section class="py-5">
         <div class="container m-auto row py-5">
             <div class="col text-center mx-2" v-for="(menu, index) in menuFitness" :key="index">
-                <a href="#" v-for="(i, index) in menu.icons" :key="menu.title + index">
-                    <i :class="i.icon"></i>
+                <a href="#">
+                    <i :class="menu.icon" class="mb-2"></i>
                 </a>
-                <!-- <i class="fa-solid fa-link mb-2"></i> -->
                 <h4 class="fw-bold">{{ menu.title }}</h4>
                 <img :src="`${menu.img}`" alt="">
                 <p>{{ menu.text}}</p>
@@ -21,33 +20,25 @@ export default {
         return{
             menuFitness: [
                 { 
-                    icons:[
-                        {icon: "fa-solid fa-link-horizontal-slash", link: "#"},
-                    ],
+                    icon:"fa-solid fa-link",
                     title: "Strenght & Conditioning", 
                     img: require("../../assets/img/divider-x-red.png"), 
                     text: "lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us."
                 },
                 { 
-                    icons:[
-                        {icon: "fa-solid fa-link-horizontal-slash", link: "#"},
-                    ],
+                    icon:"fa-solid fa-bicycle",
                     title: "Strenght & Conditioning", 
                     img: require("../../assets/img/divider-x-red.png"), 
                     text: "lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us."
                 },
                 { 
-                    icons:[
-                        {icon: "fa-solid fa-link-horizontal-slash", link: "#"},
-                    ],
+                    icon:"fa-solid fa-cloud",
                     title: "Strenght & Conditioning", 
                     img: require("../../assets/img/divider-x-red.png"), 
                     text: "lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us."
                 },
                 { 
-                    icons:[
-                        {icon: "fa-solid fa-link-horizontal-slash", link: "#"},
-                    ],
+                    icon:"fa-solid fa-heart-pulse",
                     title: "Strenght & Conditioning", 
                     img: require("../../assets/img/divider-x-red.png"), 
                     text: "lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue nisl, ornare es volutpat etra us."
