@@ -9,7 +9,7 @@
                                 {{ link.text }}
                             </a>
                             <a href="#" v-for="(social, index) in link.socials" :key="index">
-                                <i :class="social.icon" class="p-3 mx-2"></i>
+                                <i :class="social.icon" class="py-2 px-3 mx-2"></i>
                             </a>
                         </li>
                     </ul>
